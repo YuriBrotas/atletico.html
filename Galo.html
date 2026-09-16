@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Galo do Atlético Mineiro</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 40px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
+          url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1600&q=80")
+            center / cover fixed;
+      }
+
+      main {
+        width: min(1000px, 100%);
+        margin: auto;
+        padding: 30px;
+        border: 2px solid white;
+        border-radius: 12px;
+        background: rgba(0, 0, 0, 0.35);
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        text-align: center;
+        font-size: 34px;
+        text-shadow: 2px 2px 5px black;
+      }
+
+      .subtitulo {
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+      }
+
+      .caixa {
+        padding: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.72);
+        color: #111111;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      .caixa h2 {
+        margin-top: 0;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #111111;
+      }
+
+      .caixa p {
+        line-height: 1.55;
+      }
+
+      .mascote {
+        text-align: center;
+      }
+
+      .galo {
+        width: 130px;
+        height: 130px;
+        margin: 10px auto 20px;
+        display: grid;
+        place-items: center;
+        border: 7px solid #111111;
+        border-radius: 50%;
+        background: white;
+        color: #111111;
+        font-size: 70px;
+      }
+
+      .destaque {
+        padding: 12px;
+        border-radius: 8px;
+        background: #111111;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      @media (max-width: 700px) {
+        .conteudo {
+          grid-template-columns: 1fr;
+        }
+
+        h1 {
+          font-size: 27px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>Atlético Mineiro: A História do Galo</h1>
+      <p class="subtitulo">Preto, branco, raça e paixão.</p>
+
+      <section class="conteudo">
+        <article class="caixa">
+          <h2>História do Atlético</h2>
+
+          <p>
+            O Clube Atlético Mineiro foi fundado em Belo Horizonte e se tornou
+            um dos maiores símbolos do futebol brasileiro. Suas cores,
+            <strong>preto e branco</strong>, representam a tradição e a força
+            de uma torcida apaixonada.
+          </p>
+
+          <p>
+            O Atlético é conhecido por sua raça em campo, grandes conquistas e
+            por levar orgulho ao povo mineiro em todos os jogos.
+          </p>
+
+          <p class="destaque">Galo forte e vingador!</p>
+        </article>
+
+        <article class="caixa mascote">
+          <h2>O Mascote: o Galo</h2>
+
+          <div class="galo">🐓</div>
+
+          <p>
+            O galo foi escolhido como mascote do Atlético por representar
+            coragem, luta e determinação. Assim como o animal, o time entra em
+            campo para brigar por cada bola.
+          </p>
+
+          <p>
+            O preto e branco do uniforme também aparecem na identidade do
+            mascote, que se tornou um dos símbolos mais queridos pela torcida
+            atleticana.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
