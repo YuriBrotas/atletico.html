@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlético Mineiro</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #eeeeee;
+        color: #222222;
+      }
+
+      .pagina {
+        width: min(1000px, 100%);
+        margin: auto;
+        overflow: hidden;
+        border: 2px solid #bbbbbb;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      }
+
+      .capa {
+        height: 290px;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+          url("https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1400&q=80")
+            center / cover;
+      }
+
+      .titulo {
+        margin: -65px 55px 0;
+        position: relative;
+        padding: 28px;
+        background: white;
+      }
+
+      h1 {
+        margin: 0;
+        color: #111111;
+        font-size: 34px;
+      }
+
+      h2 {
+        color: #555555;
+        font-size: 22px;
+      }
+
+      p {
+        line-height: 1.6;
+        text-align: justify;
+      }
+
+      .faixa {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin: 35px 55px 55px;
+        padding: 25px;
+        border: 1px solid #cccccc;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      .galo {
+        min-width: 120px;
+        height: 120px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: #111111;
+        color: white;
+        font-size: 65px;
+      }
+
+      .texto {
+        flex: 1;
+      }
+
+      .frase {
+        color: #111111;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      @media (max-width: 650px) {
+        body {
+          padding: 15px;
+        }
+
+        .titulo {
+          margin: -40px 20px 0;
+        }
+
+        .faixa {
+          flex-direction: column;
+          margin: 25px 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="pagina">
+      <section class="capa"></section>
+
+      <section class="titulo">
+        <h1>Clube Atlético Mineiro</h1>
+
+        <p>
+          O Atlético Mineiro é um dos clubes mais tradicionais do futebol
+          brasileiro. Suas cores, preto e branco, representam a força e a
+          paixão da Massa Atleticana.
+        </p>
+      </section>
+
+      <section class="faixa">
+        <div class="galo">🐓</div>
+
+        <div class="texto">
+          <h2>O Galo</h2>
+
+          <p>
+            O galo é o mascote do Atlético Mineiro e representa coragem, raça e
+            determinação. Em cada jogo, a torcida canta e apoia o time do
+            começo ao fim.
+          </p>
+
+          <p class="frase">“Eu acredito no Galo!”</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
