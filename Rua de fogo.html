@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlético Mineiro</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        background:
+          radial-gradient(circle at bottom, #d84000 0%, transparent 35%),
+          linear-gradient(180deg, #111111 0%, #2a0900 55%, #000000 100%);
+      }
+
+      .painel {
+        width: min(820px, 100%);
+        min-height: 460px;
+        display: grid;
+        place-items: center;
+        padding: 48px 28px;
+        border: 2px solid #ffffff;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.65)),
+          repeating-linear-gradient(
+            120deg,
+            transparent 0 55px,
+            rgba(255, 80, 0, 0.2) 55px 65px
+          );
+        box-shadow: 0 0 30px #ff4d00;
+      }
+
+      .cartao {
+        width: min(540px, 100%);
+        padding: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.88);
+        color: #222222;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.55);
+      }
+
+      h1 {
+        margin: 0 0 15px;
+        color: #111111;
+        font-size: 32px;
+      }
+
+      .galo {
+        margin: 0;
+        color: #d83b00;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      .frase {
+        margin-top: 20px;
+        padding: 12px;
+        border-radius: 8px;
+        background: #111111;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="painel">
+      <article class="cartao">
+        <h1>Clube Atlético Mineiro</h1>
+
+        <p class="galo">GALO FORTE E VINGADOR</p>
+
+        <p>
+          O Atlético Mineiro é paixão, raça e tradição. A torcida do Galo
+          transforma cada jogo em uma verdadeira rua de fogo, empurrando o time
+          do início ao fim.
+        </p>
+
+        <p class="frase">“Eu acredito no Galo!”</p>
+      </article>
+    </main>
+  </body>
+</html>
